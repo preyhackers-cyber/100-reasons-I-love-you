@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>100 Reasons I Love You 💕</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Golden star/particle canvas -->
+<canvas id="starCanvas"></canvas>
+
+<div class="page">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-badge">✦ A little something for you ✦</div>
+    <h1 class="hero-title">100 Reasons<br>I Love You</h1>
+
+    <div class="golden-divider">
+      <svg viewBox="0 0 500 36" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"   stop-color="#c9a84c" stop-opacity="0"/>
+            <stop offset="20%"  stop-color="#e8d5a3" stop-opacity="0.7"/>
+            <stop offset="50%"  stop-color="#f5e6b0" stop-opacity="1"/>
+            <stop offset="80%"  stop-color="#e8d5a3" stop-opacity="0.7"/>
+            <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"   stop-color="#c9a84c" stop-opacity="0"/>
+            <stop offset="30%"  stop-color="#d4b86a" stop-opacity="0.5"/>
+            <stop offset="50%"  stop-color="#e8c97a" stop-opacity="0.9"/>
+            <stop offset="70%"  stop-color="#d4b86a" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+
+        <!-- outer thin line -->
+        <line x1="0" y1="18" x2="500" y2="18" stroke="url(#goldGrad2)" stroke-width="0.5"/>
+
+        <!-- main center line -->
+        <line x1="0" y1="18" x2="500" y2="18" stroke="url(#goldGrad)" stroke-width="1"/>
+
+        <!-- left flourish branch -->
+        <path d="M 155 18 Q 170 10 185 18" stroke="url(#goldGrad)" stroke-width="0.9" fill="none"/>
+        <path d="M 155 18 Q 170 26 185 18" stroke="url(#goldGrad)" stroke-width="0.9" fill="none"/>
+
+        <!-- right flourish branch -->
+        <path d="M 315 18 Q 330 10 345 18" stroke="url(#goldGrad)" stroke-width="0.9" fill="none"/>
+        <path d="M 315 18 Q 330 26 345 18" stroke="url(#goldGrad)" stroke-width="0.9" fill="none"/>
+
+        <!-- small diamonds on line -->
+        <polygon points="195,18 200,14 205,18 200,22" fill="#e8c97a" opacity="0.7"/>
+        <polygon points="295,18 300,14 305,18 300,22" fill="#e8c97a" opacity="0.7"/>
+
+        <!-- center ornament: large diamond + cross -->
+        <polygon points="250,10 257,18 250,26 243,18" fill="none" stroke="#f0d87a" stroke-width="1" opacity="0.9"/>
+        <polygon points="250,13 255,18 250,23 245,18" fill="#f5e6b0" opacity="0.85"/>
+        <!-- tiny cross inside -->
+        <line x1="250" y1="15" x2="250" y2="21" stroke="#c9a84c" stroke-width="0.8"/>
+        <line x1="247" y1="18" x2="253" y2="18" stroke="#c9a84c" stroke-width="0.8"/>
+
+        <!-- tiny dot accents -->
+        <circle cx="220" cy="18" r="1.2" fill="#e8c97a" opacity="0.6"/>
+        <circle cx="280" cy="18" r="1.2" fill="#e8c97a" opacity="0.6"/>
+        <circle cx="235" cy="18" r="0.8" fill="#d4b86a" opacity="0.5"/>
+        <circle cx="265" cy="18" r="0.8" fill="#d4b86a" opacity="0.5"/>
+      </svg>
+    </div>
+
+    <p class="hero-sub">Written just for you</p>
+    <p class="hero-message">
+      I wanted you to know, in my own words,<br>
+      exactly why I love you. So I wrote it all down.
+    </p>
+  </header>
+
+  <!-- STATS ROW -->
+  <div class="gold-border-frame">
+    <div class="gold-border-inner">
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat-number">100</div>
+          <div class="stat-label">Reasons</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Love</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">1</div>
+          <div class="stat-label">Person</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRAPBOOK MESSAGE CARD -->
+  <div class="scrapbook-card">
+    <div class="corner tl">✦</div>
+    <div class="corner tr">✦</div>
+    <div class="corner bl">✦</div>
+    <div class="corner br">✦</div>
+
+    <div class="card-label">A note from me to you</div>
+
+    <h2 class="card-title">Hey, you</h2>
+
+    <div class="card-gold-line">
+      <hr><span class="ornament">❧</span><hr>
+    </div>
+
+    <p class="card-text">
+      I have been wanting to do this for a while.<br>
+      Just sit down and write out all the things I love about you.<br><br>
+      Not because I had to. Just because I wanted you to have something<br>
+      you could come back to on a bad day or any day really.<br><br>
+      Every single page in here is true.<br>
+      <em>I meant every word.</em>
+    </p>
+
+    <div class="card-gold-line" style="margin-top:22px;">
+      <hr><span class="ornament">❧</span><hr>
+    </div>
+  </div>
+
+  <!-- WAX SEAL -->
+  <div style="text-align:center;">
+    <div class="wax-seal">♥</div>
+  </div>
+
+  <!-- PDF VIEWER -->
+  <div class="viewer-wrapper">
+    <div class="viewer-header">
+      <div class="viewer-header-dots">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="viewer-header-title">100 Reasons I Love You</div>
+      <div class="viewer-header-hearts"></div>
+    </div>
+    <div class="pdf-frame-wrap">
+      <iframe
+        src="100_Reasons_To_Love_You.pdf"
+        title="100 Reasons I Love You"
+        loading="lazy"
+        allow="fullscreen">
+        <p style="color:#fff;padding:30px;text-align:center;font-family:serif;">
+          Your browser doesn't support embedded PDFs.
+          <a href="100_Reasons_To_Love_You.pdf" style="color:#e8a0b0;">Open it here ♥</a>
+        </p>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- SECOND SCRAPBOOK CARD -->
+  <div class="scrapbook-card" style="animation-delay:0s;">
+    <div class="corner tl">✦</div>
+    <div class="corner tr">✦</div>
+    <div class="corner bl">✦</div>
+    <div class="corner br">✦</div>
+
+    <div class="card-label">And one more thing</div>
+    <h2 class="card-title">I am so glad it is you</h2>
+
+    <div class="card-gold-line">
+      <hr><span class="ornament">❧</span><hr>
+    </div>
+
+    <p class="card-text">
+      100 reasons felt like a lot when I started.<br>
+      By the time I finished I kept thinking of more.<br><br>
+      You are the kind of person who makes ordinary days feel good.<br>
+      And I do not take that for granted, not even a little.<br><br>
+      <em>Thank you for being you. I love you so much.</em>
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-text">Made with love, just for you</div>
+    <div class="footer-small">always and forever yours</div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
